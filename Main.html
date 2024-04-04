@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Icy's RNG</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="MainScript.js" defer></script>
+</head>
+<body>
+    <div id="Main" class="container">
+        <h1 class="title" id="title">Icy's RNG</h1>
+        <div id="AuraContainers" class="container">
+            <h1 id="Aura">Aura Here</h1>
+            <h3 id="Aurachance">1/?</h3>
+        </div>
+        <div id="ButtonContainers" class="container">
+            <button class="button" onclick="GetRarity()">Roll Aura</button>
+        </div>
+        <div id="Index" class="container">
+            <h2 class="Equip_or_Index">Equip Aura</h2>
+            <p class="para">
+                Type an aura down below you want to Equip
+            </p>
+            <p class="tip">
+                Tip: If you don't know what auras you own click
+            </p>
+            <button class="button" onclick="Change()">here</button>
+            <br><br>
+            <div id="Equip" class="container">
+                <input type="text" id="EquipInput" class="button">
+                <br><br>
+                <button class="button" id="EquipButton" onclick="EquipRarity()">Equip</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
