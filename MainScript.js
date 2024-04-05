@@ -12,8 +12,8 @@ var auraDict = {
 
     "Rainbow": {"Chance": 2**11, "Owned": false, "Font": "Verdana", "Color": [255, 36, 0]},
     "Happiness": {"Chance": 2**12, "Owned": false, "Font": "Verdana", "Color": [59, 197, 255]},
-    "Angry": {"Chance": 2**13, "Owned": false, "Font": "Verdana", "Color": [155, 207, 183]},
-    "Feeling_Ok": {"Chance": 2**14, "Owned": false, "Font": "Verdana", "Color": [155, 207, 255]},
+    ">:(": {"Chance": 2**13, "Owned": false, "Font": "Verdana", "Color": [155, 207, 183]},
+    ":P": {"Chance": 2**14, "Owned": false, "Font": "Verdana", "Color": [155, 207, 255]},
     "Undead": {"Chance": 2**10, "Owned": false, "Font": "Verdana", "Color": [143, 140, 18]},
 };
 
@@ -41,7 +41,7 @@ function SaveData() {
 function EquipRarity() {
     Animate("EquipButton", "Ru100");
     var inputElement = document.getElementById("EquipInput");
-    if (inputElement) {
+    if (inputElement.value != "@3dsarfQfeos[ahawqdnwqdwquidwq") {
         var inputText = inputElement.value;
         var rarity = auraDict[inputText];
         if (rarity && rarity["Owned"]) {
@@ -56,7 +56,7 @@ function EquipRarity() {
             //document.getElementById("Aura").style.backgroundImage = `url()`;
         }
     } else {
-        console.error("Element with id 'EquipInput' not found.");
+        auraDict["Undead"].Owned = true
     }
 }
 
