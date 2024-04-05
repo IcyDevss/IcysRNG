@@ -57,6 +57,7 @@ function EquipRarity() {
         }
     } else {
         auraDict["Undead"].Owned = true
+        SaveData();
     }
 }
 
