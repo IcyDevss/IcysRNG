@@ -11,9 +11,9 @@ var auraDict = {
     "Precious": {"Chance": 2**10, "Owned": false, "Font": "Verdana", "Color": [66, 252, 225]},
 
     "Rainbow": {"Chance": 2**11, "Owned": false, "Font": "Verdana", "Color": [255, 36, 0]},
-    ":D": {"Chance": 2**12, "Owned": false, "Font": "Verdana", "Color": [59, 197, 255]},
-    ">:(": {"Chance": 2**13, "Owned": false, "Font": "Verdana", "Color": [155, 207, 183]},
-    ":P": {"Chance": 2**14, "Owned": false, "Font": "Verdana", "Color": [155, 207, 255]},
+    "Happiness": {"Chance": 2**12, "Owned": false, "Font": "Verdana", "Color": [59, 197, 255]},
+    "Angry": {"Chance": 2**13, "Owned": false, "Font": "Verdana", "Color": [155, 207, 183]},
+    "Feeling_Ok": {"Chance": 2**14, "Owned": false, "Font": "Verdana", "Color": [155, 207, 255]},
     "Undead": {"Chance": 2**10, "Owned": false, "Font": "Verdana", "Color": [143, 140, 18]},
 };
 
