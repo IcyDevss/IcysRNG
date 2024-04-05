@@ -14,6 +14,7 @@ var auraDict = {
     "Unhappy": {"Chance": 2**13, "Owned": false, "Font": "Verdana", "Color": [155, 207, 183]},
     "Im_OK": {"Chance": 2**14, "Owned": false, "Font": "Verdana", "Color": [155, 207, 255]},
     "Undead": {"Chance": 2**15, "Owned": false, "Font": "Verdana", "Color": [143, 140, 18]},
+    "Excotic": {"Chance": 2**16, "Owned": false, "Font": "Verdana", "Color": [255, 103, 100]},
 };
 
 var clickDisabled = false;
