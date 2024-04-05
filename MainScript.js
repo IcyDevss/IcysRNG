@@ -9,19 +9,18 @@ var auraDict = {
     "Deadly": {"Chance": 2**8, "Owned": false, "Font": "Verdana", "Color": [29, 237, 35]},
     "Blank": {"Chance": 2**9, "Owned": false, "Font": "Verdana", "Color": [168, 166, 166]},
     "Precious": {"Chance": 2**10, "Owned": false, "Font": "Verdana", "Color": [66, 252, 225]},
-
     "Rainbow": {"Chance": 2**11, "Owned": false, "Font": "Verdana", "Color": [255, 36, 0]},
-    "Happiness": {"Chance": 2**12, "Owned": false, "Font": "Verdana", "Color": [59, 197, 255]},
-    ">:(": {"Chance": 2**13, "Owned": false, "Font": "Verdana", "Color": [155, 207, 183]},
-    ":P": {"Chance": 2**14, "Owned": false, "Font": "Verdana", "Color": [155, 207, 255]},
-    "Undead": {"Chance": 2**10, "Owned": false, "Font": "Verdana", "Color": [143, 140, 18]},
+    "Happy": {"Chance": 2**12, "Owned": false, "Font": "Verdana", "Color": [59, 197, 255]},
+    "Unhappy": {"Chance": 2**13, "Owned": false, "Font": "Verdana", "Color": [155, 207, 183]},
+    "Im_OK": {"Chance": 2**14, "Owned": false, "Font": "Verdana", "Color": [155, 207, 255]},
+    "Undead": {"Chance": 2**15, "Owned": false, "Font": "Verdana", "Color": [143, 140, 18]},
 };
 
 var clickDisabled = false;
 var debounceState = "Equip";
 
 function LoadData() {
-    var savedState = localStorage.getItem('SavingAurasss');
+    var savedState = localStorage.getItem('A');
     if (savedState) {
         var savedDict = JSON.parse(savedState);
         Object.assign(auraDict, savedDict);
@@ -32,7 +31,7 @@ function LoadData() {
 function SaveData() {
     try {
         var currentState = JSON.stringify(auraDict);
-        localStorage.setItem('SavingAurasss', currentState);
+        localStorage.setItem('A', currentState);
     } catch (error) {
         console.error('Error saving data:', error);
     }
